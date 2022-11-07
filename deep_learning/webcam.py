@@ -28,18 +28,6 @@ def isBlinking(history, maxFrames):
     count0 = 0
     count1 = 0
     print(len(history))
-    # for i in range(len(history)-1, len(history)-maxFrames, -1):
-    #     # print(i)
-    #     # if '0' in history:
-    #     #     return True
-    #     if history[i] == '0':
-    #         count0 += 1    
-    #     if history[i] == '1':
-    #         count1 += 1    
-    # if count0 > count1:
-    #     return True
-    # print("0 :"+str(count0))
-    # print("1 :"+str(count1))
 
     for i in range(maxFrames):
         pattern = '1' + '0'*(i+1) + '1'
